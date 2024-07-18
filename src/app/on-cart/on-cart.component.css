@@ -1,0 +1,71 @@
+/* .Empty-cart{
+    text-align: center;
+    background-color: black;
+} */
+
+table{
+    /* margin: 1rem; */
+    margin-top: 0rem;
+    border:2px solid black;
+    text-align: center;
+    padding: 0;
+    /* color:  white; */
+    color: black;
+    /* width: 80%; */
+
+    /* display: flex; */
+}
+
+table tr th{
+    background-color: rgba(255, 0, 0, 0.904);
+}
+h1{
+    text-align: center;
+    /* background-color: black; */
+}
+button{
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: rgba(255, 0, 0, 0.904);
+    display: flex;
+    border-radius: 1rem;
+    margin-bottom: rem;
+    border: none;
+    margin: 10px;
+}
+
+button:hover{
+    color:wheat;
+    border-radius: .9rem;
+}
+.order{
+    position:relative;
+    float: right;
+    /* padding: top 10px; */
+    /* top: 8rem; */
+    font-size: 20px;
+    right: 1rem;
+}
+.total{
+    background-color: lightsteelblue;
+    color: black;
+    border: 2px solid black;
+    /* padding: 10px; */
+
+}
+.total:hover{
+    color: rgba(65, 9, 9, 0.904);
+    cursor: pointer;
+    font: bold;
+    /* text-shadow: black; */
+}
+div{
+    position:relative;
+    float: right;
+    /* text-align: center; */
+    /* top: 8rem; */
+    font-size: 20px;
+    right: 1rem;
+}
+
+

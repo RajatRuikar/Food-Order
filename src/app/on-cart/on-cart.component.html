@@ -1,0 +1,81 @@
+
+<table class="container col-md-15 shadow" *ngIf='isvalid;else elseBlock'>
+    <tr>
+        <th>Sno.</th>
+        <th>Item Name</th>
+        <th>Quantity</th>
+        <th>Price per item</th>
+        <th>Price</th>
+        <th></th>
+    </tr>
+    <ng-container *ngIf='isvalid' >
+        <tr *ngFor="let Food of foods let i = index">
+            <td>{{i+1}}</td>
+            <td>{{Food.name}}</td>
+            <td>{{Food.foodQuantity}}</td>
+            <td>{{Food.price}}</td>
+            <td>{{Food.price*Food.foodQuantity}}</td>
+            <button (click)='removeItem(Food.name)'>Remove</button>
+            <!-- <button class="btn btn-danger" (click)='removeItem(Food.name)'>🗑️</button> -->
+        </tr>
+        <tr class="total">
+            <td></td>
+            <td></td>
+            <td colspan="1">Total item : {{totalQantity}}</td>
+            <td></td>
+            <td colspan="2">Grand Total : {{totalPrice}}</td>
+            <!-- <td></td> -->
+
+        </tr>
+    </ng-container>
+
+</table>
+
+<div *ngIf='isvalid'>
+    <button class="btn btn-success" (click)='Ordered()'>
+        Place Order
+    </button>
+</div>
+
+<div class="Empty-cart">
+    <ng-template #elseBlock>
+        <h1>
+            <img src="{{image3}}" alt="Not Found"><br>
+            No Food Item is Added..!
+        </h1>
+    </ng-template>
+</div>
+<button class="btn btn-dark" (click)='history()'>
+    Order History
+</button>
+<table class="container col-md-15 shadow" *ngIf='historyclicked'>
+    <tr>
+        <th>Sno.</th>
+        <th>Item Name</th>
+        <th>Quantity</th>
+        <th>Price per item</th>
+        <th>Price</th>  
+    </tr>
+    <ng-container>
+        <tr *ngFor="let Food of foodHistory let i = index">
+            <td>{{i+1}}</td>
+            <td>{{Food.name}}</td>
+            <td>{{Food.foodQuantity}}</td>
+            <td>{{Food.price}}</td>
+            <td>{{Food.price*Food.foodQuantity}}</td>
+        </tr>
+        
+    </ng-container>
+    
+
+</table>
+<div class="Empty-cart" >
+    <ng-template  *ngIf='foodHistory.length==0' >
+        <h1>
+            <img ><br>
+            No Food History..!
+        </h1>
+    </ng-template>
+</div>
+<br>
+<br>

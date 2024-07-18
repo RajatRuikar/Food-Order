@@ -1,0 +1,27 @@
+<!-- <app-tag></app-tag> -->
+<ul>
+    <li *ngFor="let Food of foods let i=index">
+        <a>
+            <img src="{{Food.imageurl}}" alt="not Found">
+            <div class="content">
+                <div class="name">
+                    {{Food.name}}
+                    <span class="tag{{tag(Food.tag)?'':'not'}}">◉</span><br>
+                </div>
+                <span class="star">Rating : {{Food.star}}</span><br>
+                <span class="favorite {{Food.favorite?'':'not'}}">★</span>
+                <div class="price">
+                    {{Food.price| currency:'INR'}}
+                </div>
+                <div class="onAdd">
+                    <button value="{{Food.name}}" (click)="onAddBag(Food) ">Add to Cart</button>
+
+                </div>
+            </div>
+        </a>
+
+        <!-- <img src="C:/Users/rajat.ruikar/Downloads/Project File/Food/foodorder/src/assets/food1.jpg" alt="Error"> -->
+    </li>
+</ul>
+
+<!-- <app-on-cart [food]="index"></app-on-cart> --> 

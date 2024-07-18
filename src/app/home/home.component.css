@@ -1,0 +1,97 @@
+.content{
+    padding: 1rem 1rem;
+    position: relative;
+    /* color: rgba(0, 0, 0, 0.801); */
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+ul li a{
+    height: 26rem;
+    width: 20rem;
+    border: 1px solid whitesmoke;
+    /* border-radius: 1rem; */
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color:rgb(27, 25, 25);
+    padding: 1.5%;
+}
+
+li a:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    background-color:rgba(81, 99, 117, 0.137);
+}
+div tag{
+    text-align: center;
+}
+
+
+.favorite{
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    /* font-size: 1.2rem; */
+    font-size: 1.7rem;
+    color: red;
+}
+.favorite.not{
+    color: black;
+}
+.favorite.not:hover{
+    color: red;
+}
+.favorite:hover{
+    color: black;
+}
+.name{
+    font-weight: bold;
+    font-size: 1.3rem;
+    /* color: black; */
+    
+}
+.tag{
+    color:red;
+    padding: 0.3rem;
+    /* background-color: red; */
+}
+
+.tagnot{
+    /* background-color: green; */
+    color:green;
+}
+.onAdd{
+    padding: 0.5rem;
+    margin-top: .3rem;
+    font-size: 25px;
+    display: flex;
+    /* border-radius: 1rem; */
+
+    /* border: red; */
+}
+div button{
+    /* visibility:collapse; */
+    background-color: red;
+    border: hidden;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    width: 100%;
+    color: wheat;
+    cursor: pointer;
+    margin: 0rem 1rem 0rem 1rem;
+    /* align-items: center; */
+}
+div button:hover{
+    color:  white;
+    opacity: 0.8;
+    border-radius: 1.2rem;
+    /* width: 80%;
+    text-align: center; */
+}

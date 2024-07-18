@@ -1,0 +1,25 @@
+footer{
+    background-color: lightsteelblue;
+    color: red;
+    padding: 1rem;
+    border-top:2px solid red;
+    /* font-style: none; */
+}
+footer ul ul a:hover{
+    /* background-color: rgba(255, 0, 0, 0.767); */
+    color: white;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+footer ul a{
+    /* border: 2px solid black ; */
+    padding: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    list-style: none;
+    color: red;
+}
+.container{
+    margin: 10px auto;
+    display: flex;
+}

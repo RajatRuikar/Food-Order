@@ -1,0 +1,27 @@
+.container{
+    text-align: center;
+    width: 75%;
+    /* background-color: gray; */
+}
+.container img{
+    width: 60%;
+}
+h1{
+    background-color: lightsteelblue;
+    border: 1px solid gray;
+    color: rgba(255, 0, 0, 0.904);
+    border-radius: 0.9rem;
+    width: 30%;
+    font-size: 28px;
+    /* text-align: center; */
+    /* color: red; */
+
+}
+h1:hover{
+    color: wheat;
+    cursor: pointer;
+    background-color: tomato;
+    background-color: rgba(255, 0, 0, 0.904);
+    border-radius: 1rem;
+
+}
